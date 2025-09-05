@@ -15,15 +15,6 @@ const fetchUserData = () => {
   });
 };
 
-const schema = yup
-  .object({
-    name: yup
-      .string()
-      .required("El nombre es obligatorio")
-      .min(2, "Mínimo 2 caracteres"),
-  })
-  .required();
-
 export default function ReactHookFormReset() {
   const { register, handleSubmit, reset, setValue, watch } = useForm({
     defaultValues: { name: "Invitado", terms: false },
