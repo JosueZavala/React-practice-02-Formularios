@@ -7,6 +7,7 @@ import { SelectForm } from "./components/Forms/RHF/control";
 import { NestedForm } from "./components/Forms/RHF/nestedObjects";
 import { EmailsForm } from "./components/Forms/RHF/useFieldArray";
 import ReactHookFormAsyncValidation from "./components/Forms/RHF/asyncValidation";
+import ReactHookFormReset from "./components/Forms/RHF/resetForm";
 
 function App() {
   return (
@@ -28,6 +29,8 @@ function App() {
         <EmailsForm />
         {/* // ? Form con RHF y Async Validation */}
         <ReactHookFormAsyncValidation />
+        {/* // ? Form con RHF con Reset y watch */}
+        <ReactHookFormReset />
       </header>
     </div>
   );
