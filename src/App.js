@@ -4,6 +4,7 @@ import UncontrolledForm from "./components/Forms/UnControlled";
 import BasicReactHookForm from "./components/Forms/RHF";
 import ReactHookFormLiveValidation from "./components/Forms/RHF/liveValidation";
 import { SelectForm } from "./components/Forms/RHF/control";
+import { NestedForm } from "./components/Forms/RHF/nestedObjects";
 
 function App() {
   return (
@@ -19,6 +20,8 @@ function App() {
         <ReactHookFormLiveValidation />
         {/* // ? Form con RHF y control*/}
         <SelectForm />
+        {/* // ? Form con RHF y nested Form*/}
+        <NestedForm />
       </header>
     </div>
   );
