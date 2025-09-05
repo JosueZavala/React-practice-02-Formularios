@@ -5,6 +5,8 @@ import BasicReactHookForm from "./components/Forms/RHF";
 import ReactHookFormLiveValidation from "./components/Forms/RHF/liveValidation";
 import { SelectForm } from "./components/Forms/RHF/control";
 import { NestedForm } from "./components/Forms/RHF/nestedObjects";
+import { EmailsForm } from "./components/Forms/RHF/useFieldArray";
+import ReactHookFormAsyncValidation from "./components/Forms/RHF/asyncValidation";
 
 function App() {
   return (
@@ -18,10 +20,14 @@ function App() {
         {/* <BasicReactHookForm /> */}
         {/* // ? Form con RHF y validacion "en vivo"*/}
         <ReactHookFormLiveValidation />
-        {/* // ? Form con RHF y control*/}
+        {/* // ? Form con RHF y control */}
         <SelectForm />
-        {/* // ? Form con RHF y nested Form*/}
+        {/* // ? Form con RHF y nested Form */}
         <NestedForm />
+        {/* // ? Form con RHF y useFieldArray */}
+        <EmailsForm />
+        {/* // ? Form con RHF y Async Validation */}
+        <ReactHookFormAsyncValidation />
       </header>
     </div>
   );
